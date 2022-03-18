@@ -13,7 +13,7 @@ namespace Ex10_Thread_Lock_wroom
         // private object lockObject = new object();
         public void openDoor(string name)
         {
-            // lock(lovkObject) <- this 대신에 위의 객체를 넣어도 된다. 사실은 이게 일반적임.
+            // lock(lockObject) <- this 대신에 위의 객체를 넣어도 된다. 사실은 이게 일반적임.
             lock (this) 
             {
                 Console.WriteLine($"{name}님 화장실 입장");
